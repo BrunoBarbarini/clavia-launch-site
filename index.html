@@ -1,21 +1,128 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Clavia - Sell with Intelligence</title>
+  <style>
+    body { font-family: 'Georgia', serif; margin: 0; padding: 0; color: #3b3b3b; background: linear-gradient(135deg, #fff5f5, #fffef0); }
+    header, section, footer { padding: 50px 25px; max-width: 960px; margin: auto; }
+    h1, h2, h3 { color: #6b4e16; }
+    header { background: linear-gradient(135deg, #ffd6d6, #ffc4c4); color: #3b3b3b; text-align: center; border-bottom: 3px solid #6b4e16; border-radius: 0 0 20px 20px; }
+    header h1 { margin: 0 0 15px; font-size: 2.5rem; font-family: 'Georgia', serif; }
+    .steps, .benefits, .plans, .movement { display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px; }
+    .card { flex: 1; background: #fffafa; padding: 25px; border-radius: 12px; border: 1px solid #ffd6d6; box-shadow: 0 4px 8px rgba(0,0,0,0.05); transition: transform 0.5s ease, opacity 0.5s ease; opacity: 0; transform: scale(0.95) translateY(20px); animation: fadeInZoomMove 1s forwards; }
+    .card:nth-child(1) { animation-delay: 0.2s; }
+    .card:nth-child(2) { animation-delay: 0.4s; }
+    .card:nth-child(3) { animation-delay: 0.6s; }
+    .card:hover { transform: scale(1.03) translateY(-5px); }
+    .testimonial { font-style: italic; background: #ffd6d6; padding: 25px; border-radius: 12px; margin: 50px 0; color: #3b3b3b; transition: opacity 0.5s ease; opacity: 0; animation: fadeInZoomMove 1s forwards 0.8s; }
+    footer { font-size: 14px; text-align: center; background: #ffc4c4; color: #3b3b3b; border-top: 2px solid #6b4e16; margin-top: 60px; padding: 30px 20px; }
+    ul { padding-left: 20px; }
+    @keyframes fadeInZoomMove { to { opacity: 1; transform: scale(1) translateY(0); } }
+  </style>
 </head>
 <body>
-  <h1>Sell with empathy. Grow with intelligence.</h1>
-  <p>Clavia turns every word into a bridge between people and performance.</p>
-  <p><strong>Coming soon: Clavia will be launched. Stay tuned!</strong></p>
-  <section class="email-signup">
-    <h2 style="text-align: center;">Be the first to know when Clavia launches!</h2>
-    <form action="https://clavia.us19.list-manage.com/subscribe/post?u=40fd808d2faad3e8dc3b5a42b&amp;id=0a582c5ad3&amp;f_id=00e6c2e1f0" method="post" target="_blank" novalidate style="text-align: center; margin-top: 20px;">
-      <input type="email" name="EMAIL" placeholder="Enter your email address" required style="padding: 10px; width: 260px; border: 1px solid #ccc; border-radius: 5px; margin-right: 10px;">
-      <button type="submit" style="padding: 10px 20px; background-color: #6b4e16; color: white; border: none; border-radius: 5px; cursor: pointer;">Notify Me</button>
-    </form>
+  <header>
+    <h1>Sell with empathy. Grow with intelligence.</h1>
+    <p>Clavia turns every word into a bridge between people and performance.</p>
+    <p><strong>Coming soon: Clavia will be launched. Stay tuned!</strong></p>
+    <section class="email-signup">
+      <h2 style="text-align: center;">Be the first to know when Clavia launches!</h2>
+      <form action="https://clavia.us19.list-manage.com/subscribe/post?u=40fd808d2faad3e8dc3b5a42b&amp;id=0a582c5ad3&amp;f_id=00e6c2e1f0" method="post" target="_blank" novalidate style="text-align: center; margin-top: 20px;">
+        <input type="email" name="EMAIL" placeholder="Enter your email address" required style="padding: 10px; width: 260px; border: 1px solid #ccc; border-radius: 5px; margin-right: 10px;">
+        <button type="submit" style="padding: 10px 20px; background-color: #6b4e16; color: white; border: none; border-radius: 5px; cursor: pointer;">Notify Me</button>
+      </form>
+    </section>
+  </header>
+
+  <section>
+    <h2>What's holding your sales back?</h2>
+    <ul>
+      <li>Salespeople without real emotional feedback.</li>
+      <li>Cold clients after soulless service.</li>
+      <li>Managers relying on guesswork, lacking human data.</li>
+    </ul>
   </section>
+
+  <section>
+    <h2>How Clavia works</h2>
+    <div class="steps">
+      <div class="card"><strong>1.</strong> The seller speaks, Clavia listens.</div>
+      <div class="card"><strong>2.</strong> Emotional intelligence interprets every nuance.</div>
+      <div class="card"><strong>3.</strong> Human and actionable feedback, ready to go.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Real impact for sales teams</h2>
+    <div class="benefits">
+      <div class="card">
+        <h3>Salespeople</h3>
+        <ul>
+          <li>Develop natural empathy.</li>
+          <li>Feel daily improvement.</li>
+          <li>Turn conversations into connections.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Managers</h3>
+        <ul>
+          <li>Make decisions based on emotional data.</li>
+          <li>Reduce internal friction.</li>
+          <li>Build high-trust teams.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    “Clavia taught our team to listen better before trying to sell. The result? Our sales doubled in three months.”<br>
+    <strong>– Marcelo, Sales Director</strong>
+  </section>
+
+  <section>
+    <h2>Choose your journey</h2>
+    <div class="plans">
+      <div class="card">
+        <h3>Starter</h3>
+        <p>Ideal for small teams. Includes up to 3 users.</p>
+        <strong>$49/month</strong>
+      </div>
+      <div class="card">
+        <h3>Growth</h3>
+        <p>For expanding and creating emotional connections. Includes up to 10 users.</p>
+        <strong>$149/month</strong>
+      </div>
+      <div class="card">
+        <h3>Scale</h3>
+        <p>Teams that lead markets. Includes up to 25 users.</p>
+        <strong>$299/month</strong>
+      </div>
+    </div>
+  </section>
+
+  <section style="background-color: #fff5f5; border-radius: 12px;">
+    <h2 style="text-align:center;">Join the Clavia Movement</h2>
+    <p style="text-align:center;">We are more than a solution — we are a movement redefining the way humans connect through sales.</p>
+    <div class="movement">
+      <div class="card">
+        <h3>🔥 Enemy</h3>
+        <p>We rebel against empty transactions. Sales must be human or they will be forgotten.</p>
+      </div>
+      <div class="card">
+        <h3>📜 Doctrine</h3>
+        <p>Human connection is the real metric of success. Empathy first, numbers second.</p>
+      </div>
+      <div class="card">
+        <h3>✨ Rituals</h3>
+        <p>Celebrate every real connection. Honor the human before the goal.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Clavia. Humanizing sales with intelligence.</p>
+  </footer>
 </body>
 </html>
