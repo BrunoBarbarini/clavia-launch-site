@@ -21,14 +21,6 @@
     ul { padding-left: 20px; }
     @keyframes fadeInZoomMove { to { opacity: 1; transform: scale(1) translateY(0); } }
   </style>
- <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11395682728"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'AW-11395682728');
-  </script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11395682728"></script>
   <script>
@@ -36,6 +28,23 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'AW-11395682728');
+  </script>
+  <!-- Event snippet for Leads to Clavia -->
+  <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-11395682728/l2W6CIqjgMAaEKij8bkq',
+          'value': 1.0,
+          'currency': 'BRL',
+          'event_callback': callback
+      });
+      return false;
+    }
   </script>
 </head>
 <body>
@@ -47,7 +56,7 @@
       <h2 style="text-align: center;">Be the first to know when Clavia launches!</h2>
       <form action="https://clavia.us19.list-manage.com/subscribe/post?u=40fd808d2faad3e8dc3b5a42b&amp;id=0a582c5ad3&amp;f_id=00e6c2e1f0" method="post" target="_blank" novalidate style="text-align: center; margin-top: 20px;">
         <input type="email" name="EMAIL" placeholder="Enter your email address" required style="padding: 10px; width: 260px; border: 1px solid #ccc; border-radius: 5px; margin-right: 10px;">
-        <button type="submit" onclick="gtag('event', 'conversion', {'send_to': 'AW-11395682728/Q9ClCMjB0qYYEJ_x_80p'})" onclick="gtag('event', 'conversion', {'send_to': 'AW-11395682728/Q9ClCMjB0qYYEJ_x_80p'});" style="padding: 10px 20px; background-color: #6b4e16; color: white; border: none; border-radius: 5px; cursor: pointer;">Notify Me</button>
+        <button type="submit" onclick="return gtag_report_conversion();" style="padding: 10px 20px; background-color: #6b4e16; color: white; border: none; border-radius: 5px; cursor: pointer;">Notify Me</button>
     </form>
     </section>
   </header>
